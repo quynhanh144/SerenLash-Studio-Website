@@ -1,0 +1,147 @@
+:root {
+    --brand-color-light-pink: #fff2f2;
+    --brand-color-pink: #f88ea3;
+    --brand-color-dark-pink: #672e3a;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fefefe;
+    color: black;
+    font-family: "Funnel Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+
+    * {
+        box-sizing: border-box;
+    }
+}
+
+h1,h2,h3,h4,h5, th {
+    font-weight: 600;
+    font-style: normal;
+    color: var(--brand-color-dark-pink);
+    margin-top: 0;
+}
+
+a {
+    color: var(--brand-color-dark-pink);
+}
+
+
+header {
+    background-color: var(--brand-color-light-pink);
+    padding: 20px;
+    text-align: center;
+
+    img {
+        width: 50%;
+    }
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    background-color: var(--brand-color-pink);
+    color: var(--brand-color-dark-pink);
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.section {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+.pink-container {
+    padding: 30px;
+    background-color: var(--brand-color-light-pink);
+}
+
+footer {
+    background-color: var(--brand-color-light-pink);
+    color: var(--brand-color-dark-pink);
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+}
+
+#intro {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 2rem;
+    font-size: 18px;
+    align-items: center;
+    
+    h2 {
+        font-size: 2.2rem;
+    }
+}
+#intro > div {
+    max-width: 500px;
+}
+
+#price-list {
+    table {  
+        display: flex;
+        flex-direction: column;
+        padding-top: 1rem;
+
+        th {
+            font-size: 20px;
+        }
+
+        tr {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.8rem;
+        }
+
+        tr:not(:first-child) {
+            border-bottom: black 1px dotted;
+            padding-bottom: 2px;
+        }
+    }
+}
+
+#contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    a {
+        text-underline-offset: 2px;
+        text-decoration: none;
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        gap: 0.33rem;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    nav button {
+        padding: 8px 12px;
+    }
+
+    header img {
+        width: 90%;
+    }
+}
